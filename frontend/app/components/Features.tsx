@@ -21,7 +21,7 @@ export default function Features() {
 
           <div className="text-center">
             <h3 className="font-bold">24/7 SUPPORT</h3>
-            <p>We're here to help</p>
+            <p>We&apos;re here to help</p>
           </div>
         </div>
 
@@ -44,7 +44,7 @@ export default function Features() {
 
           <div className="text-center">
             <h3 className="font-bold">24/7 SUPPORT</h3>
-            <p>We're here to help</p>
+            <p>We&apos;re here to help</p>
           </div>
         </div>
 

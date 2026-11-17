@@ -9,6 +9,8 @@ export function CartProvider({ children }) {
 
   useEffect(() => {
     const stored = localStorage.getItem("cart");
+    // Read client-only storage after mount so server and client markup match.
+    // eslint-disable-next-line react-hooks/set-state-in-effect
     if (stored) setCart(JSON.parse(stored));
   }, []);
 

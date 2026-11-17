@@ -22,6 +22,8 @@ export default function HistoryPage() {
   useEffect(() => {
     const saved = localStorage.getItem("orders");
     if (saved) {
+      // Read client-only storage after mount so server and client markup match.
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setOrders(JSON.parse(saved));
     }
   }, []);

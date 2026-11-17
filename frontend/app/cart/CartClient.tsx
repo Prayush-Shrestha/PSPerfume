@@ -30,6 +30,8 @@ export default function CartClient() {
     const savedCart = localStorage.getItem("cart");
 
     if (savedCart) {
+      // Read client-only storage after mount so server and client markup match.
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setCart(JSON.parse(savedCart));
     }
   }, []);

@@ -23,7 +23,7 @@ export default function Navbar() {
       }
       const cart = JSON.parse(data);
       let total = 0;
-      cart.forEach((item: any) => {
+      cart.forEach((item: { quantity: number }) => {
         total += item.quantity;
       });
       setCartCount(total);
