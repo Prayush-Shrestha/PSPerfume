@@ -136,7 +136,7 @@ export default function Navbar() {
                       onClick={closeSearch}
                       className="flex items-center gap-4 p-4 border-b border-gray-800 hover:bg-[#1b2740] transition"
                     >
-                      <Image src={perfume.image} alt={perfume.name} width={60} height={60} className="rounded-md object-cover" />
+                      <Image src={perfume.image} alt={perfume.name} width={60} height={60} sizes="60px" className="h-[60px] w-[60px] rounded-md object-cover" />
                       <div className="flex-1">
                         <h3 className="font-semibold text-white">{perfume.name}</h3>
                         <p className="text-sm text-gray-400">{perfume.type}</p>

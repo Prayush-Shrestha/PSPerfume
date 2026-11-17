@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, type FormEvent } from "react";
 import Navbar from "../components/Navbar";
 
 export default function ContactPage() {
@@ -18,7 +18,7 @@ export default function ContactPage() {
 
   const [submitted, setSubmitted] = useState(false);
 
-  function handleSubmit(e) {
+  function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
 
     let hasError = false;

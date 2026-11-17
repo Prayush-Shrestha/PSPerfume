@@ -58,9 +58,11 @@ export default function Hero() {
             <Image
               src="/images/perfume.jpg"
               alt="perfume"
-              width={520}
-              height={520}
-              className="rounded-2xl drop-shadow-2xl"
+              width={387}
+              height={516}
+              preload
+              sizes="(max-width: 768px) 100vw, 520px"
+              className="h-auto w-full max-w-[520px] rounded-2xl drop-shadow-2xl"
             />
           </div>
         </div>

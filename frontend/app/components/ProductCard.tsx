@@ -96,6 +96,7 @@ export default function ProductCard({
               src={perfume.image}
               alt={perfume.name}
               fill
+              sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 25vw"
               className="
                 object-cover
 
